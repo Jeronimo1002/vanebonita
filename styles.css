@@ -52,7 +52,7 @@ body {
     .audio-wrapper {
         font-family: Arial, sans-serif;
         position: absolute;
-        top: 9%; /* Mover al 50% desde el top */
+        top: 15%; /* Mover al 50% desde el top */
         left: 58.5%; /* Mover al 50% desde la izquierda */
         transform: translate(-50%, -50%); /* Centrar usando transform */
         width: 300px; /* Ajusta el ancho si es necesario */
