@@ -8,7 +8,7 @@ body {
         position: absolute;
         top: 6.9%; /* Mover al 50% desde el top */
         left: 40.5%; /* Mover al 50% desde la izquierda */
-        width: 260px;
+        width: 200px;
         height: 80px;
         transform: translate(-50%, -50%); /* Centrar usando transform */
         text-align: center;
@@ -52,11 +52,11 @@ body {
     .audio-wrapper {
         font-family: Arial, sans-serif;
         position: absolute;
-        top: 28%; /* Mover al 50% desde el top */
-        left: 42%; /* Mover al 50% desde la izquierda */
+        top: 10%; /* Mover al 50% desde el top */
+        left: 58%; /* Mover al 50% desde la izquierda */
         transform: translate(-50%, -50%); /* Centrar usando transform */
-        width: 300px; /* Ajusta el ancho si es necesario */
-        height: 120px;
+        width: auto; /* Ajusta el ancho si es necesario */
+        height: auto;
         background: #fff;
         border-radius: 12px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
