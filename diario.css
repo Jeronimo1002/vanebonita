@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    min-height: 100vh; /* Asegurarse de que el contenedor cubra la altura completa */
+    font-family: Arial, sans-serif; /* Fuente principal */
+    padding: 0;
+    box-sizing: border-box;
+    position: relative; /* Necesario para posicionar los elementos fijos */
+}
+.container {
+    width: 90%;
+    max-width: 605px; /* Asegurarse de que el contenedor no sea demasiado ancho */
+    display: flex;
+    flex-direction: column;
+    top: 60%; /* Mover al 50% desde el top */
+    left: 50%; /* Mover al 50% desde la izquierda */
+    transform: translate(-50%, -50%); /* Centrar usando transform */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centrar horizontalmente */
+    position: absolute;
+    margin-top: 240px; /* Espacio para el contador en la parte superior */
+    margin-bottom: 10px; /* Espacio para el formulario en la parte inferior */
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+    max-height: calc(100vh - 40px); /* Limitar la altura para el desplazamiento */
+}
+
+.header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    z-index: 10;
+}
+
+.comments-container {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 0px; /* Espacio para el formulario */
+}
+
+.comment-form {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.comment-form .controls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+}
+
+.comment-form .icon-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #007BFF;
+    margin-left: 10px;
+    z-index: 10;
+}
+
+
+.comment-form #imagePreview {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.comment-form #removeImage {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.comments {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.comment time {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.comment img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.comment .author {
+    font-weight: bold;
+    margin-top: 5px;
+    color: #333;
+}

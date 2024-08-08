@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title> Diario </title>
+       <link rel="stylesheet" href="styles.css">
+       <link rel="stylesheet" href="musica.css">
+       <link rel="stylesheet" href="calendario.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+       <link rel="stylesheet" href="diario.css">
+       <link rel="stylesheet" href="nota.css">
+       <link rel="stylesheet" href="poema.css">
+    </head>
+    <body>
+<!-- Contador-->
+        <div id="timeElapsed">
+            <h3>Desde el 25 de julio de 2024 a las 3:40 am:</h3>
+            <div id="time">
+                <span id="days">000</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+        </div>        
+<!-- Contenedor del reproductor de musica-->
+    <div class="audio-wrapper">
+        <h1>Dedicatoria Musical</h1>
+        <audio id="audioPlayer" controls>
+            <source src="D:\alanm\Music/1.mp3" type="audio/mp3">
+            <p>Tu navegador no soporta el elemento de audio. <a href="audio/tu-cancion.mp3">Descarga la canción aquí</a>.</p>
+        </audio>
+    </div>
+    <!-- Cuadro de diálogo personalizado -->
+    <div id="dialogOverlay" class="dialog-overlay">
+        <div class="dialog">
+            <h2>💖 ¡Gracias por escuchar! 💖</h2>
+            <p>Gracias por escuchar la canción, ven mañana y habrá otra nueva.</p>
+            <button onclick="closeDialog()">Cerrar</button>
+        </div>
+    </div>
+<!-- Diario -->
+<div class="container">
+    <div class="header">
+        <h1>Diario</h1>
+    </div>
+
+    <div class="comments-container">
+        <!-- Los comentarios se mostrarán aquí -->
+        <ul class="comments"></ul>
+    </div>
+
+    <div class="comment-form">
+        <textarea id="commentText" placeholder="Escribe aquí..." rows="4" required></textarea>
+        <img id="imagePreview" style="display: none;">
+        <button id="removeImage" style="display: none;" onclick="removeImage()">&#10006;</button>
+        <div class="controls">
+            <label for="imageUpload" class="icon-button">
+                <i class="fas fa-camera"></i>
+                <input type="file" id="imageUpload" style="display: none;" accept="image/*" onchange="previewImage(event)">
+            </label>
+            <button class="icon-button" onclick="addComment()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <div class="calendar-container">
+        <h3>YA CASI ES TU CUMPLE!!</h3>
+                <div class="month" id="month"></div>
+                <div class="calendar" id="calendar"></div>
+            </div>
+        
+            <!-- Modal -->
+            <div id="birthdayModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        ¡Feliz Cumpleaños, Vane!
+                    </div>
+                    <div class="modal-body">
+                        🎉✨ ¡Feliz cumpleaños a la niña más bonita del mundo! 🎈🎂
+                        <br><br>
+                        Que tu día esté lleno de amor y alegría. 💖
+                    </div>
+                    <div class="modal-footer">
+                        <button class="modal-close" onclick="closeModal()">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+<!-- NOTA -->
+    <div id="note-container">
+        <h3>Notas Diarias</h3> 
+        <p>Puedes escrbir en la diario, es tuyo, yo no veo lo que escribas, yo escribiré el mío.
+        La canción cambia todos los días. El contador es del tiempo que no te he hablado :(</p>
+    </div>
+<!-- poema -->
+<button id="showPoemButton">Mostrar Poema</button>
+    <div id="overlay">
+        <div id="poemContainer">
+            <span id="closeButton">&times;</span>
+            <h2>Poema</h2>
+            <p>
+                Tu amor es como el mar,<br>
+                infinito y profundo,<br>
+                susurrando secretos<br>
+                que solo el alma puede escuchar.<br>
+                <br>
+                Como la brisa de la mañana,<br>
+                acaricias mi ser,<br>
+                y en el abrazo del amanecer<br>
+                encuentro mi hogar.
+            </p>
+        </div>
+    </div>
+    <script src="java.js"></script>
+    <script src="diariojs.js"></script>
+    <script src="cumple.js"></script>
+    <script src="poema.js"></script>
+    </body>
+</html>
