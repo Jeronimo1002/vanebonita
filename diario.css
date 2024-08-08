@@ -10,7 +10,7 @@ body {
     max-width: 605px; /* Asegurarse de que el contenedor no sea demasiado ancho */
     display: flex;
     flex-direction: column;
-    top: 52%; /* Mover al 50% desde el top */
+    top: 60%; /* Mover al 50% desde el top */
     left: 50%; /* Mover al 50% desde la izquierda */
     transform: translate(-50%, -50%); /* Centrar usando transform */
     background-color: #fff;
