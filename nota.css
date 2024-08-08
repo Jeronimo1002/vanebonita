@@ -1,0 +1,40 @@
+body {
+    min-height: 100vh; /* Asegurarse de que el contenedor cubra la altura completa */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative; /* Necesario para posicionar los elementos fijos */
+}
+#note-container {
+    width: 90%;
+    max-width: 100px; /* Ajuste del tamaño del post-it */
+    height: 90%;
+    max-height: 100px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #fff9b0; /* Color típico de un post-it */
+    border-radius: 10px 10px 50px 10px; /* Bordes redondeados y uno de ellos más grande para parecer un papel doblado */
+    position: absolute;
+    top: 32%; /* Posición vertical media */
+    left: 35%; /* Ajusta la distancia desde la parte izquierda */
+    transform: translateY(-50%); /* Ajusta la posición para centrar verticalmente */
+    text-align: center;
+    font-size: .5696em;
+    z-index: 10;
+    
+}
+#note-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 20px;
+    background-color: #d40909;
+    transform: rotate(-20deg);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+h3{
+    margin-top: 0px;
+}
