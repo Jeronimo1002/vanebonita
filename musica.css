@@ -17,7 +17,8 @@ body {
     width: 90%; /* Ajusta el ancho si es necesario */
     max-width: 605px;
     display: flex;
-    height: auto;
+    height: min-content;
+    max-height: max-content;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 0px 16px rgba(0, 0, 0, 0.3);
