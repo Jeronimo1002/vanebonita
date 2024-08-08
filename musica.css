@@ -33,11 +33,6 @@ body {
     color: #000000;
     font-weight: bold;
 }
-.audio-wrapper p {
-    font-size: .9em;
-    color: #000000;
-    margin: auto 0;
-}
 audio {
     width: 100%;
     margin-top: center;
