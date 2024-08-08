@@ -23,7 +23,7 @@ body {
     color: #af1010;
     position: absolute; /* Posicionar absolutamente */
     top: 0px; /* Desde el borde superior del contenedor */
-    left: 45%; /* Desde el borde izquierdo del contenedor */
+    left: 36%; /* Desde el borde izquierdo del contenedor */
     transform: translateX(-50%); /* Centrar horizontalmente */
     max-width: auto;
     text-align: center;
