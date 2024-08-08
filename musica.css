@@ -11,7 +11,7 @@ body {
     position: absolute;
     margin-top: 70px;
     margin-bottom: 20px;
-    top: 15px; /* Mover al 50% desde el top */
+    top: 50px; /* Mover al 50% desde el top */
     left: 50%; /* Mover al 50% desde la izquierda */
     transform: translate(-50%, -50%); /* Centrar usando transform */
     width: 90%; /* Ajusta el ancho si es necesario */
