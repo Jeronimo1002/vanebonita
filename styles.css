@@ -25,8 +25,6 @@ body {
     }
     
     #timeElapsed h3 {
-        margin: auto 0;
-        margin-top: center; 
         font-size: auto;
         color: #000000;
         text-align: center;
