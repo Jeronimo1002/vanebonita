@@ -26,28 +26,26 @@ function removeImage() {
 function addComment() {
     event.preventDefault();
     
-    var username = document.getElementById('username').value;
     var commentText = document.getElementById('commentText').value;
     var imageUrl = document.getElementById('imagePreview').src;
 
     if (username.trim() === "" || commentText.trim() === "") {
-        alert("El nombre y el comentario no pueden estar vacíos.");
+        alert("El comentario no puede estar vacío.");
         return;
     }
 
     if (imageUrl === '') {
-        saveAndDisplayComment(username, commentText, null);
+        saveAndDisplayComment(commentText, null);
     } else {
-        saveAndDisplayComment(username, commentText, imageUrl);
+        saveAndDisplayComment(commentText, imageUrl);
     }
 }
 
-function saveAndDisplayComment(username, text, imageUrl) {
+function saveAndDisplayComment(text, imageUrl) {
     var now = new Date();
     var timestamp = now.toLocaleString();
 
     var comment = {
-        username: username,
         text: text,
         imageUrl: imageUrl,
         timestamp: timestamp
@@ -59,7 +57,6 @@ function saveAndDisplayComment(username, text, imageUrl) {
 
     displayComment(comment);
 
-    document.getElementById('username').value = '';
     document.getElementById('commentText').value = '';
     document.getElementById('imageUpload').value = '';
     document.getElementById('imagePreview').style.display = 'none';
@@ -73,15 +70,10 @@ function displayComment(comment) {
     var timeElement = document.createElement('time');
     timeElement.textContent = "Publicado el: " + comment.timestamp;
 
-    var authorElement = document.createElement('p');
-    authorElement.className = 'author';
-    authorElement.textContent = "Publicado por: " + comment.username;
-
     var commentContent = document.createElement('p');
     commentContent.textContent = comment.text;
 
     commentElement.appendChild(timeElement);
-    commentElement.appendChild(authorElement);
     commentElement.appendChild(commentContent);
 
     if (comment.imageUrl) {
