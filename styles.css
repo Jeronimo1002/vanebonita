@@ -9,7 +9,7 @@ body {
     #timeElapsed {
         display: flex;
         position: absolute;
-        top: 6.9%; /* Mover al 50% desde el top */
+        top: 13%; /* Mover al 50% desde el top */
         margin-top: 125px;
         left: 50%; /* Mover al 50% desde la izquierda */
         width: 90%;
