@@ -16,7 +16,7 @@ body {
     border-radius: 10px 10px 50px 10px; /* Bordes redondeados y uno de ellos más grande para parecer un papel doblado */
     position: absolute;
     top: 32%; /* Posición vertical media */
-    left: 35%; /* Ajusta la distancia desde la parte izquierda */
+    left: 15%; /* Ajusta la distancia desde la parte izquierda */
     transform: translateY(-50%); /* Ajusta la posición para centrar verticalmente */
     text-align: center;
     font-size: .5696em;
