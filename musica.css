@@ -18,7 +18,7 @@ body {
     max-width: 605px;
     display: flex;
     height: min-content;
-    max-height: max-content;
+    max-height: 20px;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 0px 16px rgba(0, 0, 0, 0.3);
