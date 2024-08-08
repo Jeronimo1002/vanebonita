@@ -54,8 +54,6 @@ body {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     z-index: 10;
 }
-
-.comment-form input[type="text"],
 .comment-form textarea {
     width: 100%;
     padding: 10px;
@@ -64,11 +62,14 @@ body {
     margin-bottom: 10px;
     resize: none;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .comment-form .controls {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: flex-end; /* Alinea los botones a la derecha */
 }
 
 .comment-form .icon-button {
@@ -78,6 +79,7 @@ body {
     cursor: pointer;
     color: #007BFF;
     margin-left: 10px;
+    z-index: 10;
 }
 
 .comment-form #imagePreview {
@@ -141,10 +143,4 @@ body {
     font-weight: bold;
     margin-top: 5px;
     color: #333;
-}
-
-iframe {
-    width: 100%;
-    height: 510px;
-    border: none;
 }
