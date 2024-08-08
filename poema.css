@@ -1,13 +1,13 @@
 body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+   margin: 0;
+    font-family: Arial, sans-serif; /* Fuente principal */
+    padding: 0;
+    box-sizing: border-box;
+    position: relative; /* Necesario para posicionar los elementos fijos */
 }
 
 button {
+    position: absolute;
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
@@ -18,6 +18,9 @@ button {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
     z-index: 10;
+    top: 0%;
+    margin-top: 1.4%;
+    left: 54%;
 }
 
 button:hover {
