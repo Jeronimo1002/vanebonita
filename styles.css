@@ -24,7 +24,7 @@ body {
         font-family: 'Courier New', Courier, monospace; /* Tipografía del reloj */
     }
     
-    #timeElapsed h2 {
+    #timeElapsed h3 {
         margin: auto 0;
         margin-top: center; 
         font-size: auto;
