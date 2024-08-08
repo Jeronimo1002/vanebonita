@@ -1,11 +1,3 @@
-body {
-   margin: 0;
-    font-family: Arial, sans-serif; /* Fuente principal */
-    padding: 0;
-    box-sizing: border-box;
-    position: relative; /* Necesario para posicionar los elementos fijos */
-}
-
 #showPoemButton{ {
     position: absolute;
     padding: 10px 20px;
