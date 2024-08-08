@@ -8,24 +8,24 @@ body {
 /* Estilo del modal */
 .calendar-container {
     display: flex; /* Usar Flexbox para centrar contenido */
-    flex-direction: column; /* Organizar contenido en columna */
     justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    height: 290px; /* Ajusta la altura del contenedor */
+    height: 90%; /* Ajusta la altura del contenedor */
     padding: 20px;
     position: relative;
+    width: 90%;
+    max-width: auto 0;
 }
 
 .calendar-container h3 {
-    margin-top: 9px;
-    margin-bottom: 20px;
+    margin-top: 2%;
+    margin-bottom: 0px;
     font-size: 1.3em;
     color: #af1010;
     position: absolute; /* Posicionar absolutamente */
     top: 0px; /* Desde el borde superior del contenedor */
-    left: 50%; /* Desde el borde izquierdo del contenedor */
+    left: 45%; /* Desde el borde izquierdo del contenedor */
     transform: translateX(-50%); /* Centrar horizontalmente */
-    max-width: 605px;
+    max-width: auto;
     text-align: center;
 }
 .modal {
