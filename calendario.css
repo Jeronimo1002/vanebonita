@@ -26,6 +26,7 @@ body {
     left: 50%; /* Desde el borde izquierdo del contenedor */
     transform: translateX(-50%); /* Centrar horizontalmente */
     max-width: 605px;
+    text-align: center;
 }
 .modal {
     display: none; 
