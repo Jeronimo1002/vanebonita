@@ -17,13 +17,13 @@ body {
 }
 
 .calendar-container h3 {
-    margin-top: 2%;
+    margin-top: 2.5%;
     margin-bottom: 0px;
     font-size: 1.1em;
     color: #af1010;
     position: absolute; /* Posicionar absolutamente */
     top: 0%; /* Desde el borde superior del contenedor */
-    left: 33%; /* Desde el borde izquierdo del contenedor */
+    left: 32%; /* Desde el borde izquierdo del contenedor */
     transform: translateX(-50%); /* Centrar horizontalmente */
     max-width: auto;
     text-align: center;
