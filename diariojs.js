@@ -24,10 +24,11 @@ function removeImage() {
 }
 
 function addComment() {
-    var commentText = document.getElementById('commentText').value;
-    var imageUrl = document.getElementById('imagePreview').src;
+    var commentText = document.getElementById('commentText').value.trim();
+    var imagePreview = document.getElementById('imagePreview');
+    var imageUrl = imagePreview.style.display !== 'none' ? imagePreview.src : '';
 
-    if (commentText.trim() === "") {
+    if (commentText === "" && imageUrl === "") {
         alert("El comentario no puede estar vacío.");
         return;
     }
