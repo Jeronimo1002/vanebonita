@@ -38,33 +38,3 @@ body {
 h3{
     margin-top: 0px;
 }
-textarea {
-    width: 100%;
-    height: 60px;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 0.8em;
-    background-color: #fff9b0; /* Fondo igual al del post-it */
-    border: 1px solid transparent; /* Bordes invisibles */
-    border-radius: 5px;
-    box-sizing: border-box;
-    outline: none; /* Eliminar el borde al enfocar */
-    resize: none; /* Desactivar el redimensionado del área de texto */
-}
-
-textarea::placeholder {
-    color: rgba(0, 0, 0, 0.5); /* Color del placeholder ligeramente oscuro */
-}
-
-button {
-    padding: 5px 5px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
