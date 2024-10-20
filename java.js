@@ -1,5 +1,5 @@
 const updateTimeElapsed = () => {
-    const startDate = new Date('August 18, 2024 23:07:00');
+    const startDate = new Date('July 3, 2024 15:00:00');
     const now = new Date();
     const elapsedTime = now - startDate;
 
